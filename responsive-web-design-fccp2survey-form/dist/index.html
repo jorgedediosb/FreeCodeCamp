@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive Web Design FCC - p2 - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Segundo ejercicio del curso responsive web design de FreeCodeCamp-->
+<!DOCTYPE html>
+<html lang="es">
+  <head></head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">FreeCodeCamp - Ejercicio 2</h1>
+        <h2 id="description">Formulario de contacto súper guapo</h2>
+      </header>
+<!-- START FORM -->
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Nombre:</label>
+          <input id="name" type="text" name="name" class="form-control" placeholder="Pepito Grillo" required>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email:</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="pepitogrillo@gmail.com" required>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="age">Edad
+            <span class="opcional">(Opcional. Mínimo 18 años)</span>
+          </label>
+          <input type="number" name="age" id="number" min="18" max="99" class="form-control" placeholder="42">
+        </div>
+        <div class="form-group">
+         <label>Nivel de estudios:</label>
+          <select id="dropdown" name="role" class="form-control" requirer>
+           <option disabled selected value >Elige una opción</option>
+           <option value="bachillerato" >Bachillerato</option>
+           <option value="universidad">Universidad</option>
+           <option value="master">Master</option>
+           <option value="doctorado">Doctorado</option>
+          </select>
+         </div>
+         <div class="form-group">
+           <br></br>
+           <p><u>¿Qué prefieres?</u></p>
+           <label>
+           <input type="checkbox" name="user-recommend" value="sofa-peli" class="input-radio" checked> Sofá y peli</input>
+          </label>
+          <label>
+          <input type="checkbox" name="user-recommend" value="tarde-jugona" class="input-radio"> Tarde jugona</input>
+          </label>
+          <label>
+          <input type="checkbox" name="user-recommend" value="lectura-favorita" class="input-radio"> Lectura favorita</input>
+          </label>
+         </div>
+  <div class="form-group">
+    <p><u>¿Cómo sueles ves el vaso?</u></p>
+           <label>
+           <input type="radio" name="user-recommend" value="sofa-peli" class="input-radio" checked> Medio lleno</input>
+           </label>
+           <label>
+           <input type="radio" name="user-recommend" value="tarde-jugona" class="input-radio"> Medio vacío</input>
+           </label>
+          </div>
+          <div class="form-group">
+           <p>¿Algún comentario que quieras hacer?</p>
+           <label>
+           <textarea id="comments" class="input-textarea" name"comment" placeholder="Haz un comentario"></textarea>
+           </label>
+          </div>
+          <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Enviar</button>
+          </div>
+          </form>
+</body>
+</html>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
