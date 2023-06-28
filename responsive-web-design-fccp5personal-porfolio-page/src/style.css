@@ -1,0 +1,305 @@
+/* Colors
+
+Primary 1/Fonts: #474b4e (gris oscuro) ;
+Primary 2/Titles: #EB3B88 (rosa)
+Secundary 1/Hover: #00BB3F (verde oscuro)
+Secundary 2: CFF76F (verde claro)
+Secundary 3/Hover: lightgrey (gris claro);
+Background: #fff
+
+*/
+
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* Responsive Design media */
+
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  html {
+    font-size: 60%;
+  }
+}
+  
+body {
+  font-family: ptserif, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #474b4e;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 1px grey;
+  z-index: 999;
+}
+.nav-list {
+  display: flex;
+  margin: 5px 40px;
+}
+.nav-list a {
+  display: block;
+  font-size: 20px;
+  margin: 10px 20px;
+}
+.nav-list a:hover {
+  position: absolute;
+  border-bottom: 5px solid #474b4e;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #474b4e;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 700; 
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 500; 
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  font-size: 30px;
+}
+p {
+  font-size: 15px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1, h2, h3, p {
+  font-family: sans-serif;
+}
+
+/* SECCIÓN ABOUT */
+
+.welcome-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  background-image: #181719;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding-top: 0px;
+  }
+
+.welcome-section-box {
+  border-left: 3px solid #EB3B88;
+  width: 600px;
+  margin-top: 50px;
+  padding-top: 0px;
+  padding-left: 40px;
+}
+
+.section-button {
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 50%;
+  cursor: pointer;
+}
+
+.section-button:before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  border-style: solid;
+  border-width: 20px 20px 20px 20px;
+  border-color: #eb3b88
+                transparent
+                transparent
+                transparent;
+  top: 15px;
+  left: 15px;
+  -webkit-animation: 1.5s move-arrow infinite
+}
+
+@keyframes move-arrow {
+      99% {
+        top: 30px;
+  }
+}
+
+.section-button > a {
+  color: #EB3B88;
+  font-size: 30px;
+  padding-left: 80px;
+}
+
+/* PROJECTS SECTION */
+
+.projects-section {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  background-color: white;
+}
+
+.projects-section-header {
+}
+
+/* prueba caja mov */
+
+.projects-grid {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  background-color: #CFF76F;
+  background-clip: padding-box;
+  border-radius: 5px;
+  border: 1px solid #CFF76F;
+  overflow: hidden;
+  margin: 15px;
+}
+
+.portfolio_project_description {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  padding: 1.5em 0em 1.5em;
+  text-align: center;
+  background: #fff;
+}
+
+.portfolio_project_preview,
+.portfolio_project_description {
+  transition: all 600ms ease;
+}
+
+.projects-grid:hover .portfolio_project_description {
+  transform: translateY(-100%);
+}
+.projects-grid:hover .portfolio_project_preview {
+  transform: translateY(-2.5em);
+}
+
+.material-symbols-outlined {
+  position: relative;
+  top: 100px;
+  font-size: 100px !important;
+  font-weight: 50 !important;
+  color: lightslategrey;
+}
+.project-tile {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+  margin: 0;
+  margin-bottom: .2em;
+  padding: 10px;
+}
+
+.portfolio_project_category {
+  font-size: .9em;
+  color: #EB3B88;
+  margin-bottom: .6em;
+}
+
+/* FIN prueba caja mov */
+
+.project-tile {
+  text-align: center;
+  font-size: 20px;
+  font-style: none;
+  color: #474b4e;
+}
+.project-tile:hover {
+  color: #EB3B88;
+  transition: 0.2s;
+}
+.projects-image {
+  height: auto;
+  max-width: 40%;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid grey;
+  border-radius: 30px;
+}
+img {
+  display: block;
+  width: 50%;
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+  text-align: center;
+  padding: 40px;
+  background: white;
+}
+.contact-section a:hover {
+  color: 474b4e;
+  border-bottom: 5px solid #474b4e;
+}
+.contact-section-header a {
+  color: 474b4e;
+}
+
+/* FOOTER SECTION */
+
+.footer {
+  background: black;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 40px;
+}
+.footer-list {
+  display: flex;
+  margin: 20px 0px 20px;
+  font-style: italic;
+  font-size: 15px;
+}
+.footer-list a {
+  margin: 0px 20px 0px 40px;
+}
+.footer-list a:hover {
+  color: white;
+}
